@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>movie app</title>
+        <link rel="stylesheet" href="/stylesheets/design.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+     
+    </head>
+    <body class="body">
+        <h1 id="mid">search result <span style="color: darkgray;">> </span><%= squery%></h1>
+
+       <% data['results'].forEach((movies)=>{ %>
+            <div class="card mb-5 w-75">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2<%= movies['poster_path']%>" class="card-img img-fluid" id="img">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title"><%= movies['original_title'] %></h2>
+                            <hr>
+                            <p class="card-text"><%= movies['overview'] %></p>
+                            <hr>
+                            <br>
+                            <p class="card-text"><b>Date published :    </b> <%= movies['release_date'] %></p>
+                            <p class="card-text"><b>Total votes :   </b> <%= movies['vote_count'] %></p>
+                            <p class="card-text"><b>Average ratings :   </b> <%= movies['vote_average'] %></p>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <%    }) %>
+        
+    </body>
+</html>

@@ -1,0 +1,28 @@
+#search1{
+    margin-top: 20%;
+    margin-bottom: 1%; 
+    font-family:mate sc ;
+    font-weight: 700;  
+}
+.body{ 
+    background-image:url("/images/images.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mid{
+    color:#000000;
+    font-family:mate sc ;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    margin-left: 12.5%;
+    font-weight: 700;
+}
+#img{
+    height: 25rem;
+}
+.card{
+    margin-left: 12.5%;
+}
+.card-title{
+    font-family: source sans pro;
+}
